@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "826375719037",
+    "firebase_url": "https://project-c8def-default-rtdb.firebaseio.com",
+    "project_id": "project-c8def",
+    "storage_bucket": "project-c8def.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826375719037:android:a580437df6dc6bc34a0914",
+        "android_client_info": {
+          "package_name": "com.example.attendanceapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4qGP3gW5ifPg1e3cMiDSPZigfBk46zQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826375719037:android:4de6848d6a9f91944a0914",
+        "android_client_info": {
+          "package_name": "com.example.project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4qGP3gW5ifPg1e3cMiDSPZigfBk46zQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
