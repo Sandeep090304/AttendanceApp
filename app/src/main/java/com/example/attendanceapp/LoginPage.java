@@ -58,7 +58,10 @@ public class LoginPage extends AppCompatActivity {
                                         p_var.setError(null);
                                         p_var.setErrorEnabled(false);
                                         Toast.makeText(LoginPage.this, "login successfully", Toast.LENGTH_SHORT).show();
+                                        String sp = u_var.getEditText().getText().toString();
+
                                         Intent intent=new Intent(getApplicationContext(), Dashboard.class);
+                                        intent.putExtra("name", sp);
                                         startActivity(intent);
                                         finish();
 
