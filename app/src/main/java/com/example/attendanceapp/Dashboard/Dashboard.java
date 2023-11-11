@@ -40,7 +40,7 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Start the activity for the second card
-                Intent intent = new Intent(Dashboard.this, Dashboard.class);
+                Intent intent = new Intent(Dashboard.this, Dashboard2.class);
                 startActivity(intent);
             }
         });
@@ -48,7 +48,7 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Start the activity for the second card
-                Intent intent = new Intent(Dashboard.this, Dashboard.class);
+                Intent intent = new Intent(Dashboard.this, Dashboard3.class);
                 startActivity(intent);
             }
         });
@@ -56,7 +56,7 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Start the activity for the second card
-                Intent intent = new Intent(Dashboard.this, Dashboard.class);
+                Intent intent = new Intent(Dashboard.this, Dashboard4.class);
                 startActivity(intent);
             }
         });
