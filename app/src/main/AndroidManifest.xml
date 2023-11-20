@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AttendanceApp"
         tools:targetApi="31">
         <activity
+            android:name=".nav_branch"
+            android:exported="false" />
+        <activity
             android:name=".Dashboard.Dashboard4"
             android:exported="false" />
         <activity
