@@ -34,7 +34,7 @@ public class Dashboard4 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Define the intent here
-                Intent intent = new Intent(Dashboard4.this,SecActivity7.class);
+                Intent intent = new Intent(Dashboard4.this,SecActivity5.class);
                 startActivity(intent);
             }
         });
@@ -43,7 +43,7 @@ public class Dashboard4 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Define the intent here
-                Intent intent = new Intent(Dashboard4.this,SecActivity7.class);
+                Intent intent = new Intent(Dashboard4.this,SecActivity5.class);
                 startActivity(intent);
             }
         });
@@ -52,7 +52,7 @@ public class Dashboard4 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Define the intent here
-                Intent intent = new Intent(Dashboard4.this,SecActivity7.class);
+                Intent intent = new Intent(Dashboard4.this,SecActivity5.class);
                 startActivity(intent);
             }
         });

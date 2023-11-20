@@ -1,8 +1,8 @@
 package com.example.attendanceapp.Subject;
 
 public class Classitem {
-  private   String Domainname;
-   private String SubjentName;
+    private  String Domainname;
+    private String SubjentName;
 
     public Classitem(String domainname, String subjentName) {
         Domainname = domainname;
