@@ -34,11 +34,11 @@ public class AddSubject extends AppCompatActivity {
     Button cancel;
     Button add;
 
-    @SuppressLint("MissingInflatedId")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_add_subject);
         fab=findViewById(R.id.add);
         fab.setOnClickListener(v->show());
         recyclerView=findViewById(R.id.recycle);
