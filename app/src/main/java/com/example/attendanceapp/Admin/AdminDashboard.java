@@ -28,7 +28,7 @@ public class AdminDashboard extends AppCompatActivity {
         setContentView(R.layout.activity_admin_daashboard);
         dBhelper=new DBhelper(this);
         buttonadd=findViewById(R.id.buttonadd);
-        imageView=findViewById(R.id.img_view_user);
+        imageView=findViewById(R.id.logout);
         buttonupdate=findViewById(R.id.buttonupdate);
         buttondel=findViewById(R.id.buttondel);
         buttonview=findViewById(R.id.buttonview);

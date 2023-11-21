@@ -6,6 +6,10 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import com.example.attendanceapp.Entity.Student;
+
+import java.util.ArrayList;
+
 public class DBhelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME="StudentDB";
     private static final int DATABASE_VERSION=1;
@@ -60,6 +64,23 @@ public class DBhelper extends SQLiteOpenHelper {
     {
         SQLiteDatabase db=this.getReadableDatabase();
         return db.delete(TABLE_NAME," id = ? ",new String[] {id});
+    }
+
+    public ArrayList<Student> fetchstudent(){
+        SQLiteDatabase db=this.getReadableDatabase();
+        Cursor cursor=db.rawQuery("SELECT * from "+TABLE_NAME,null);
+        ArrayList<Student> arrStudent= new ArrayList<>();
+        while(cursor.moveToNext()){
+            Student model=new Student();
+            model.setId(cursor.getInt(0));
+            model.setName(cursor.getString(1));
+            model.setRollno(cursor.getString(2));
+
+            arrStudent.add(model);
+
+        }
+        return arrStudent;
+
     }
 
     @Override

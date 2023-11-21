@@ -38,7 +38,7 @@ public class AttendanceAdapter extends RecyclerView.Adapter<AttendanceAdapter.Vi
         AttendanceModel item = dataList.get(position);
 
         // Set your data to the views in the ViewHolder
-        holder.textViewSlNo.setText(item.getSlNo());
+        holder.textViewSlNo.setText(String.valueOf(item.getSlNo()));
         holder.textViewStudentName.setText(item.getStudentName());
         holder.textViewRegNo.setText(item.getRegNo());
 
