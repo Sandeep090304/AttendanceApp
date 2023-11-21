@@ -23,27 +23,39 @@
 
             <ImageView
                 android:id="@+id/img_view_user"
-                android:layout_width="57dp"
-                android:layout_height="57dp"
-                android:layout_marginStart="68dp"
-                android:src="@drawable/baseline_account_circle"
+                android:layout_width="49dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="56dp"
+                android:src="@drawable/car"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.504" />
 
             <TextView
-                android:layout_width="152dp"
-                android:layout_height="27dp"
+                android:layout_width="161dp"
+                android:layout_height="44dp"
                 android:layout_marginStart="25dp"
                 android:fontFamily="@font/concert_one"
                 android:text="Hello! Admin"
-                android:textSize="25sp"
+                android:textSize="28sp"
                 app:layout_constraintBottom_toBottomOf="@+id/img_view_user"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.055"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/img_view_user"
-                app:layout_constraintTop_toTopOf="@+id/img_view_user" />
+                app:layout_constraintTop_toTopOf="@+id/img_view_user"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/logout"
+                android:layout_width="45dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="312dp"
+                android:src="@drawable/logout"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.504" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
