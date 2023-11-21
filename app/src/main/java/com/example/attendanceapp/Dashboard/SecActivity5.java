@@ -9,7 +9,11 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.attendanceapp.R;
+
 import com.example.attendanceapp.attendance_sheet;
+
+import com.example.attendanceapp.Subject.AddSubject;
+
 
 public class SecActivity5 extends AppCompatActivity {
     Button button;
@@ -19,6 +23,7 @@ public class SecActivity5 extends AppCompatActivity {
         setContentView(R.layout.activity_sec5);
         ImageView imageView = findViewById(R.id.right_icon);
         button=findViewById(R.id.button);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,6 +36,15 @@ public class SecActivity5 extends AppCompatActivity {
             public void onClick(View v) {
                 // Your click event logic here
                 onBackPressed();
+            }
+        });
+
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SecActivity5.this, AddSubject.class);
+                startActivity(intent);
             }
         });
     }
