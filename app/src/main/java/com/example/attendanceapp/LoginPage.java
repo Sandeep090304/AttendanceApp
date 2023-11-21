@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.attendanceapp.Admin.AdminDashboard;
 import com.example.attendanceapp.Dashboard.Dashboard;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DataSnapshot;
@@ -69,6 +70,12 @@ public class LoginPage extends AppCompatActivity {
                                     else{
                                         p_var.setError("wrong password");
                                     }
+                                }
+                                else if(user.equals("admin")&&pass.equals("admin")){
+                                    Toast.makeText(LoginPage.this, "Welcome Admin", Toast.LENGTH_SHORT).show();
+                                    Intent intent=new Intent(getApplicationContext(), AdminDashboard.class);
+                                    startActivity(intent);
+                                    finish();
                                 }
                                 else{
                                     u_var.setError("user does not exist");

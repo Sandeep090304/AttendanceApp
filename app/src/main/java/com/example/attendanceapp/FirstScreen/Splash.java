@@ -1,41 +1,44 @@
 package com.example.attendanceapp.FirstScreen;
-import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
-import android.widget.FrameLayout;
 import android.widget.MediaController;
 import android.widget.VideoView;
-
+import androidx.appcompat.app.AppCompatActivity;
 import com.example.attendanceapp.LoginPage;
-import com.example.attendanceapp.MainActivity;
 import com.example.attendanceapp.R;
 
 public class Splash extends AppCompatActivity {
     VideoView videoView;
-    @SuppressLint("MissingInflatedId")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        Intent intent= new Intent(Splash.this, LoginPage.class);
+
+        // Intent to start LoginPage after the splash screen
+        Intent intent = new Intent(Splash.this, LoginPage.class);
+
+        // Initialize VideoView
         videoView = findViewById(R.id.videoView);
-        videoView.setVideoPath( "android.resource://" + getPackageName() + "/" + R.raw.front);
-        // videoView.setControls(false);
-        MediaController mediaController;
-        mediaController = new MediaController(this);
-        videoView.setMediaController(mediaController);
+        videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.front);
+
+        // Create a MediaController
+        MediaController mediaController = new MediaController(this);
+
+        // Set MediaController to hide it
         mediaController.setAnchorView(videoView);
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                videoView.start();
-                startActivity(intent);
-                finish();
-            }
-        },6300);
+        videoView.setMediaController(mediaController);
+        mediaController.setVisibility(View.GONE); // Hide the MediaController
+
+        // Start the video playback immediately
+        videoView.start();
+
+        // Start LoginPage after video playback completes
+        videoView.setOnCompletionListener(mp -> {
+            startActivity(intent);
+            finish();
+        });
     }
 }
