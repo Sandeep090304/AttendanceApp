@@ -9,5 +9,6 @@ public class nav_branch extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_nav_branch);
     }
 }

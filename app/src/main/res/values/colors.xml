@@ -5,4 +5,10 @@
     <color name="start_color">#ffde59</color>
     <color name="end_color">#ff914d</color>
     <color name="background">#F8DE22</color>
+    <color name="btn_color">#9ADE7B</color>
+    <color name="btn_color_2">#FF8F8F</color>
+    <color name="green">#A6CF98</color>
+    <color name="red">#FA7070</color>
+    <color name="blue">#87C4FF</color>
+    <color name="yellow">#FFC436</color>
 </resources>
